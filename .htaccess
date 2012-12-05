@@ -1,0 +1,25 @@
+DirectoryIndex index.php
+
+RewriteEngine On
+
+RewriteRule ^registration.html$ index.php?action=register [L] # Регистрация
+
+RewriteRule ^logout$ index.php?action=logout [L] # Выход из аккаунта
+
+RewriteRule ^news_add.html$ index.php?action=addnews [L] # Добавление новости
+
+RewriteRule ^ratenews/(up|down)/(.*)$ index.php?action=ratenews&$1=$2 [L] # Изменение рейтинга новости
+
+RewriteRule ^page/(.*)$ index.php?page=$1 [L] # Постраничная навигация
+
+RewriteRule ^([0-9]+)-(.*).html$ index.php?action=fullnews&newsid=$1 [L] # Вывод полной новости
+
+RewriteRule ^profile/(.*)$ index.php?action=viewprofile&uname=$1 [L] # Профили пользователей	
+
+RewriteRule ^activate/(.*)/(.*)$ index.php?action=activate&code=$2&uname=$1 [L] # Активация аккаунта по e-mail
+
+RewriteRule ^admin$ admin/index.php [L] # Админка
+
+RewriteRule ^ajax$ ajax.php [L] # Ajax
+
+RewriteRule ^about$ index.php?action=about [L] # About
