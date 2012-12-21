@@ -1,10 +1,15 @@
 <?php
-use Silex\Application;
-$app = new Application();
-class Test{
-
-public function __construct()
+//namespace Manager;
+class Test
 {
-	return $app;
-}
+	public $var = 'Привет';
+	public $app = 'Привет';
+	
+	public function __construct($app)
+	{
+		$this->app = $app;
+		return $this->app;
+	}
+	
+	public static function test(){return 'echo';}
 }
