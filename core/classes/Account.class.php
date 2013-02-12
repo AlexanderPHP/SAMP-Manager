@@ -55,7 +55,7 @@ class Account{
 	{
 		switch($opt)
 		{
-			case 'email': Main::Db()->getResult('SELECT `id` FROM `site_users` WHERE `email` = :email',array(':email'=>$data));break;
+			case 'email': Main::Db()->noResult('SELECT `id` FROM `site_users` WHERE `email` = :email',array(':email'=>$data));break;
 				
 			case 'login': Main::Db()->noResult('SELECT `id` FROM `site_users` WHERE `name` = :name',array(':name'=>$data));break;
 			
@@ -156,8 +156,10 @@ TEXT;
 	{
 		if(Main::$Auth)
 		{
-			setcookie('pwd','', time()-3600,'/');
-			setcookie('uid','', time()-3600,'/');		
+			foreach($_COOKIE as $k=>$v)
+			{
+				setcookie($k,'', time()-3600,'/');
+			}	
 			Main::$Auth = false;
 		}
 			header("Location: http://".$_SERVER['SERVER_NAME']);

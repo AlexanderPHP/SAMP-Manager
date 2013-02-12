@@ -12,7 +12,7 @@ Main::Tpl()->Path = 'http://'.$_SERVER['SERVER_NAME'];
 
 Main::Account();
 
-if(isset($_POST['action']))
+/* if(isset($_POST['action']))
 {
 	if(isset($_POST['name'],$_POST['password'],$_POST['email'],$_POST['key']) && $_POST['action'] == 'gamereg' && $_POST['key'] == '5H6734391Pt8QV4c9!n21Vp24jy05aPf')
 	{
@@ -20,7 +20,8 @@ if(isset($_POST['action']))
 		 //file_put_contents('log.log', implode("\n",$_POST), FILE_APPEND);
 	}
 }
-
+ */ // регистрация через игру, пока неактуально
+ 
 if(Main::$Auth && !Main::$UserData['site']->group)
 {
     if(isset($_GET['action']))
