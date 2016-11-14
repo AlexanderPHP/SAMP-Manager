@@ -1,526 +1,0 @@
-
-#################################################################
-: Wed Oct 3 11:02:36 MSK 2012
-SQLSTATE[42S22]: Column not found: 1054 Unknown column 'last_visit' in 'field list'   UPDATE `site_users` SET `last_visit` = CURRENT_TIMESTAMP WHERE `id` = :id
-Stack:
-file:26-W:\domains\beautifullife.ru\core\classes\ERR.class.php
-call:backtrace()
-
-file:161-W:\domains\beautifullife.ru\core\classes\DB.class.php
-call:err_log("SQLSTATE[42S22]: Column not found: 1054 Unknown column 'last_vis...", True, False, True)
-
-file:134-W:\domains\beautifullife.ru\core\classes\DB.class.php
-call:err(Object(PDOException), "UPDATE `site_users` SET `last_visit` = CURRENT_TIMESTAMP WHERE `...")
-
-file:51-W:\domains\beautifullife.ru\core\classes\DB.class.php
-call:query("UPDATE `site_users` SET `last_visit` = CURRENT_TIMESTAMP WHERE `...", Array(1))
-
-file:14-W:\domains\beautifullife.ru\core\classes\Account.class.php
-call:noResult("UPDATE `site_users` SET `last_visit` = CURRENT_TIMESTAMP WHERE `...", Array(1))
-
-file:21-W:\domains\beautifullife.ru\core\classes\Main.class.php
-call:__construct()
-
-file:8-W:\domains\beautifullife.ru\core\init.php
-call:__construct()
-
-file:4-W:\domains\beautifullife.ru\index.php
-call:include_once("W:\domains\beautifullife.ru\core\init.php")
-
-
-
-
-#################################################################
-: Wed Oct 3 11:37:58 MSK 2012
-SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '+1 WHERE `name` = 'Vito_Corleone'' at line 1   UPDATE `game_users` SET `warnings`+1 WHERE `name` = :name
-Stack:
-file:26-W:\domains\beautifullife.ru\core\classes\ERR.class.php
-call:backtrace()
-
-file:161-W:\domains\beautifullife.ru\core\classes\DB.class.php
-call:err_log("SQLSTATE[42000]: Syntax error or access violation: 1064 You have...", True, False, True)
-
-file:134-W:\domains\beautifullife.ru\core\classes\DB.class.php
-call:err(Object(PDOException), "UPDATE `game_users` SET `warnings`+1 WHERE `name` = :name")
-
-file:51-W:\domains\beautifullife.ru\core\classes\DB.class.php
-call:query("UPDATE `game_users` SET `warnings`+1 WHERE `name` = :name", Array(1))
-
-file:231-W:\domains\beautifullife.ru\core\classes\Account.class.php
-call:noResult("UPDATE `game_users` SET `warnings`+1 WHERE `name` = :name", Array(1))
-
-file:22-W:\domains\beautifullife.ru\ajax.php
-call:UserEditActions("warn", "Vito_Corleone")
-
-
-
-
-#################################################################
-: Wed Oct 3 11:38:03 MSK 2012
-SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '+1 WHERE `name` = 'Vito_Corleone'' at line 1   UPDATE `game_users` SET `warnings`+1 WHERE `name` = :name
-Stack:
-file:26-W:\domains\beautifullife.ru\core\classes\ERR.class.php
-call:backtrace()
-
-file:161-W:\domains\beautifullife.ru\core\classes\DB.class.php
-call:err_log("SQLSTATE[42000]: Syntax error or access violation: 1064 You have...", True, False, True)
-
-file:134-W:\domains\beautifullife.ru\core\classes\DB.class.php
-call:err(Object(PDOException), "UPDATE `game_users` SET `warnings`+1 WHERE `name` = :name")
-
-file:51-W:\domains\beautifullife.ru\core\classes\DB.class.php
-call:query("UPDATE `game_users` SET `warnings`+1 WHERE `name` = :name", Array(1))
-
-file:231-W:\domains\beautifullife.ru\core\classes\Account.class.php
-call:noResult("UPDATE `game_users` SET `warnings`+1 WHERE `name` = :name", Array(1))
-
-file:22-W:\domains\beautifullife.ru\ajax.php
-call:UserEditActions("warn", "Vito_Corleone")
-
-
-
-
-#################################################################
-: Sun Nov 11 15:55:24 MSK 2012
-SQLSTATE[HY000] [1049] Unknown database 'beautifuldb'   
-Stack:
-file:26-W:\domains\localhost\core\classes\ERR.class.php
-call:backtrace()
-
-file:161-W:\domains\localhost\core\classes\DB.class.php
-call:err_log("SQLSTATE[HY000] [1049] Unknown database 'beautifuldb'   ", True, False, True)
-
-file:29-W:\domains\localhost\core\classes\DB.class.php
-call:err(Object(PDOException))
-
-file:26-W:\domains\localhost\core\classes\Main.class.php
-call:__construct("beautifuldb", "root", "", "localhost")
-
-file:37-W:\domains\localhost\core\classes\News.class.php
-call:__callStatic("Db", Array(0))
-
-file:37-W:\domains\localhost\core\classes\News.class.php
-call:Db()
-
-file:12-W:\domains\localhost\core\classes\News.class.php
-call:PagCount()
-
-file:44-W:\domains\localhost\core\classes\Main.class.php
-call:__construct(5)
-
-file:58-W:\domains\localhost\core\init.php
-call:__callStatic("News", Array(0))
-
-file:58-W:\domains\localhost\core\init.php
-call:News()
-
-file:4-W:\domains\localhost\index.php
-call:include_once("W:\domains\localhost\core\init.php")
-
-
-
-
-#################################################################
-: Sun Nov 11 15:57:34 MSK 2012
-SQLSTATE[HY000] [1049] Unknown database 'beautifuldb'   
-Stack:
-file:26-W:\domains\localhost\core\classes\ERR.class.php
-call:backtrace()
-
-file:161-W:\domains\localhost\core\classes\DB.class.php
-call:err_log("SQLSTATE[HY000] [1049] Unknown database 'beautifuldb'   ", True, False, True)
-
-file:29-W:\domains\localhost\core\classes\DB.class.php
-call:err(Object(PDOException))
-
-file:26-W:\domains\localhost\core\classes\Main.class.php
-call:__construct("beautifuldb", "root", "", "localhost")
-
-file:37-W:\domains\localhost\core\classes\News.class.php
-call:__callStatic("Db", Array(0))
-
-file:37-W:\domains\localhost\core\classes\News.class.php
-call:Db()
-
-file:12-W:\domains\localhost\core\classes\News.class.php
-call:PagCount()
-
-file:44-W:\domains\localhost\core\classes\Main.class.php
-call:__construct(5)
-
-file:58-W:\domains\localhost\core\init.php
-call:__callStatic("News", Array(0))
-
-file:58-W:\domains\localhost\core\init.php
-call:News()
-
-file:4-W:\domains\localhost\index.php
-call:include_once("W:\domains\localhost\core\init.php")
-
-
-
-
-#################################################################
-: Tue Feb 12 17:10:27 MSK 2013
-SQLSTATE[22003]: Numeric value out of range: 1690 BIGINT UNSIGNED value is out of range in '(`beautifuldb`.`site_news`.`pos_votes` - `beautifuldb`.`site_news`.`neg_votes`)'   SELECT `id`,`title` FROM `site_news` ORDER BY `pos_votes`-`neg_votes` DESC LIMIT 0,6
-Stack:
-file:26-D:\OpenServer\domains\localhost\core\classes\ERR.class.php
-call:backtrace()
-
-file:161-D:\OpenServer\domains\localhost\core\classes\DB.class.php
-call:err_log("SQLSTATE[22003]: Numeric value out of range: 1690 BIGINT UNSIGNE...", True, False, True)
-
-file:145-D:\OpenServer\domains\localhost\core\classes\DB.class.php
-call:err(Object(PDOException), "SELECT `id`,`title` FROM `site_news` ORDER BY `pos_votes`-`neg_v...")
-
-file:75-D:\OpenServer\domains\localhost\core\classes\DB.class.php
-call:query("SELECT `id`,`title` FROM `site_news` ORDER BY `pos_votes`-`neg_v...", False)
-
-file:31-D:\OpenServer\domains\localhost\core\classes\News.class.php
-call:getResult("SELECT `id`,`title` FROM `site_news` ORDER BY `pos_votes`-`neg_v...")
-
-file:74-D:\OpenServer\domains\localhost\core\init.php
-call:getNews("top")
-
-file:4-D:\OpenServer\domains\localhost\index.php
-call:include_once("D:\OpenServer\domains\localhost\core\init.php")
-
-
-
-
-#################################################################
-: Tue Feb 12 17:10:28 MSK 2013
-SQLSTATE[22003]: Numeric value out of range: 1690 BIGINT UNSIGNED value is out of range in '(`beautifuldb`.`site_news`.`pos_votes` - `beautifuldb`.`site_news`.`neg_votes`)'   SELECT `id`,`title` FROM `site_news` ORDER BY `pos_votes`-`neg_votes` DESC LIMIT 0,6
-Stack:
-file:26-D:\OpenServer\domains\localhost\core\classes\ERR.class.php
-call:backtrace()
-
-file:161-D:\OpenServer\domains\localhost\core\classes\DB.class.php
-call:err_log("SQLSTATE[22003]: Numeric value out of range: 1690 BIGINT UNSIGNE...", True, False, True)
-
-file:145-D:\OpenServer\domains\localhost\core\classes\DB.class.php
-call:err(Object(PDOException), "SELECT `id`,`title` FROM `site_news` ORDER BY `pos_votes`-`neg_v...")
-
-file:75-D:\OpenServer\domains\localhost\core\classes\DB.class.php
-call:query("SELECT `id`,`title` FROM `site_news` ORDER BY `pos_votes`-`neg_v...", False)
-
-file:31-D:\OpenServer\domains\localhost\core\classes\News.class.php
-call:getResult("SELECT `id`,`title` FROM `site_news` ORDER BY `pos_votes`-`neg_v...")
-
-file:74-D:\OpenServer\domains\localhost\core\init.php
-call:getNews("top")
-
-file:4-D:\OpenServer\domains\localhost\index.php
-call:include_once("D:\OpenServer\domains\localhost\core\init.php")
-
-
-
-
-#################################################################
-: Tue Feb 12 17:11:19 MSK 2013
-SQLSTATE[22003]: Numeric value out of range: 1690 BIGINT UNSIGNED value is out of range in '(`beautifuldb`.`site_news`.`pos_votes` - `beautifuldb`.`site_news`.`neg_votes`)'   SELECT `id`,`title` FROM `site_news` ORDER BY `pos_votes`-`neg_votes` DESC LIMIT 0,6
-Stack:
-file:26-D:\OpenServer\domains\localhost\core\classes\ERR.class.php
-call:backtrace()
-
-file:161-D:\OpenServer\domains\localhost\core\classes\DB.class.php
-call:err_log("SQLSTATE[22003]: Numeric value out of range: 1690 BIGINT UNSIGNE...", True, False, True)
-
-file:145-D:\OpenServer\domains\localhost\core\classes\DB.class.php
-call:err(Object(PDOException), "SELECT `id`,`title` FROM `site_news` ORDER BY `pos_votes`-`neg_v...")
-
-file:75-D:\OpenServer\domains\localhost\core\classes\DB.class.php
-call:query("SELECT `id`,`title` FROM `site_news` ORDER BY `pos_votes`-`neg_v...", False)
-
-file:31-D:\OpenServer\domains\localhost\core\classes\News.class.php
-call:getResult("SELECT `id`,`title` FROM `site_news` ORDER BY `pos_votes`-`neg_v...")
-
-file:74-D:\OpenServer\domains\localhost\core\init.php
-call:getNews("top")
-
-file:4-D:\OpenServer\domains\localhost\index.php
-call:include_once("D:\OpenServer\domains\localhost\core\init.php")
-
-
-
-
-#################################################################
-: Tue Feb 12 17:11:27 MSK 2013
-SQLSTATE[22003]: Numeric value out of range: 1690 BIGINT UNSIGNED value is out of range in '(`beautifuldb`.`site_news`.`pos_votes` - `beautifuldb`.`site_news`.`neg_votes`)'   SELECT `id`,`title` FROM `site_news` ORDER BY `pos_votes`-`neg_votes` DESC LIMIT 0,6
-Stack:
-file:26-D:\OpenServer\domains\localhost\core\classes\ERR.class.php
-call:backtrace()
-
-file:161-D:\OpenServer\domains\localhost\core\classes\DB.class.php
-call:err_log("SQLSTATE[22003]: Numeric value out of range: 1690 BIGINT UNSIGNE...", True, False, True)
-
-file:145-D:\OpenServer\domains\localhost\core\classes\DB.class.php
-call:err(Object(PDOException), "SELECT `id`,`title` FROM `site_news` ORDER BY `pos_votes`-`neg_v...")
-
-file:75-D:\OpenServer\domains\localhost\core\classes\DB.class.php
-call:query("SELECT `id`,`title` FROM `site_news` ORDER BY `pos_votes`-`neg_v...", False)
-
-file:31-D:\OpenServer\domains\localhost\core\classes\News.class.php
-call:getResult("SELECT `id`,`title` FROM `site_news` ORDER BY `pos_votes`-`neg_v...")
-
-file:74-D:\OpenServer\domains\localhost\core\init.php
-call:getNews("top")
-
-file:4-D:\OpenServer\domains\localhost\index.php
-call:include_once("D:\OpenServer\domains\localhost\core\init.php")
-
-
-
-
-#################################################################
-: Tue Feb 12 17:11:28 MSK 2013
-SQLSTATE[22003]: Numeric value out of range: 1690 BIGINT UNSIGNED value is out of range in '(`beautifuldb`.`site_news`.`pos_votes` - `beautifuldb`.`site_news`.`neg_votes`)'   SELECT `id`,`title` FROM `site_news` ORDER BY `pos_votes`-`neg_votes` DESC LIMIT 0,6
-Stack:
-file:26-D:\OpenServer\domains\localhost\core\classes\ERR.class.php
-call:backtrace()
-
-file:161-D:\OpenServer\domains\localhost\core\classes\DB.class.php
-call:err_log("SQLSTATE[22003]: Numeric value out of range: 1690 BIGINT UNSIGNE...", True, False, True)
-
-file:145-D:\OpenServer\domains\localhost\core\classes\DB.class.php
-call:err(Object(PDOException), "SELECT `id`,`title` FROM `site_news` ORDER BY `pos_votes`-`neg_v...")
-
-file:75-D:\OpenServer\domains\localhost\core\classes\DB.class.php
-call:query("SELECT `id`,`title` FROM `site_news` ORDER BY `pos_votes`-`neg_v...", False)
-
-file:31-D:\OpenServer\domains\localhost\core\classes\News.class.php
-call:getResult("SELECT `id`,`title` FROM `site_news` ORDER BY `pos_votes`-`neg_v...")
-
-file:74-D:\OpenServer\domains\localhost\core\init.php
-call:getNews("top")
-
-file:4-D:\OpenServer\domains\localhost\index.php
-call:include_once("D:\OpenServer\domains\localhost\core\init.php")
-
-
-
-
-#################################################################
-: Tue Feb 12 17:13:00 MSK 2013
-SQLSTATE[22003]: Numeric value out of range: 1690 BIGINT UNSIGNED value is out of range in '(`beautifuldb`.`site_news`.`pos_votes` - `beautifuldb`.`site_news`.`neg_votes`)'   SELECT `id`,`title` FROM `site_news` ORDER BY `pos_votes`-`neg_votes` DESC LIMIT 0,6
-Stack:
-file:26-D:\OpenServer\domains\localhost\core\classes\ERR.class.php
-call:backtrace()
-
-file:161-D:\OpenServer\domains\localhost\core\classes\DB.class.php
-call:err_log("SQLSTATE[22003]: Numeric value out of range: 1690 BIGINT UNSIGNE...", True, False, True)
-
-file:145-D:\OpenServer\domains\localhost\core\classes\DB.class.php
-call:err(Object(PDOException), "SELECT `id`,`title` FROM `site_news` ORDER BY `pos_votes`-`neg_v...")
-
-file:75-D:\OpenServer\domains\localhost\core\classes\DB.class.php
-call:query("SELECT `id`,`title` FROM `site_news` ORDER BY `pos_votes`-`neg_v...", False)
-
-file:31-D:\OpenServer\domains\localhost\core\classes\News.class.php
-call:getResult("SELECT `id`,`title` FROM `site_news` ORDER BY `pos_votes`-`neg_v...")
-
-file:74-D:\OpenServer\domains\localhost\core\init.php
-call:getNews("top")
-
-file:4-D:\OpenServer\domains\localhost\index.php
-call:include_once("D:\OpenServer\domains\localhost\core\init.php")
-
-
-
-
-#################################################################
-: Tue Feb 12 17:13:01 MSK 2013
-SQLSTATE[22003]: Numeric value out of range: 1690 BIGINT UNSIGNED value is out of range in '(`beautifuldb`.`site_news`.`pos_votes` - `beautifuldb`.`site_news`.`neg_votes`)'   SELECT `id`,`title` FROM `site_news` ORDER BY `pos_votes`-`neg_votes` DESC LIMIT 0,6
-Stack:
-file:26-D:\OpenServer\domains\localhost\core\classes\ERR.class.php
-call:backtrace()
-
-file:161-D:\OpenServer\domains\localhost\core\classes\DB.class.php
-call:err_log("SQLSTATE[22003]: Numeric value out of range: 1690 BIGINT UNSIGNE...", True, False, True)
-
-file:145-D:\OpenServer\domains\localhost\core\classes\DB.class.php
-call:err(Object(PDOException), "SELECT `id`,`title` FROM `site_news` ORDER BY `pos_votes`-`neg_v...")
-
-file:75-D:\OpenServer\domains\localhost\core\classes\DB.class.php
-call:query("SELECT `id`,`title` FROM `site_news` ORDER BY `pos_votes`-`neg_v...", False)
-
-file:31-D:\OpenServer\domains\localhost\core\classes\News.class.php
-call:getResult("SELECT `id`,`title` FROM `site_news` ORDER BY `pos_votes`-`neg_v...")
-
-file:74-D:\OpenServer\domains\localhost\core\init.php
-call:getNews("top")
-
-file:4-D:\OpenServer\domains\localhost\index.php
-call:include_once("D:\OpenServer\domains\localhost\core\init.php")
-
-
-
-
-#################################################################
-: Tue Feb 12 17:20:45 MSK 2013
-SQLSTATE[22003]: Numeric value out of range: 1690 BIGINT UNSIGNED value is out of range in '(`beautifuldb`.`site_news`.`pos_votes` - `beautifuldb`.`site_news`.`neg_votes`)'   SELECT `id`,`title` FROM `site_news` ORDER BY `pos_votes`-`neg_votes` DESC LIMIT 0,6
-Stack:
-file:26-D:\OpenServer\domains\localhost\core\classes\ERR.class.php
-call:backtrace()
-
-file:161-D:\OpenServer\domains\localhost\core\classes\DB.class.php
-call:err_log("SQLSTATE[22003]: Numeric value out of range: 1690 BIGINT UNSIGNE...", True, False, True)
-
-file:145-D:\OpenServer\domains\localhost\core\classes\DB.class.php
-call:err(Object(PDOException), "SELECT `id`,`title` FROM `site_news` ORDER BY `pos_votes`-`neg_v...")
-
-file:75-D:\OpenServer\domains\localhost\core\classes\DB.class.php
-call:query("SELECT `id`,`title` FROM `site_news` ORDER BY `pos_votes`-`neg_v...", False)
-
-file:31-D:\OpenServer\domains\localhost\core\classes\News.class.php
-call:getResult("SELECT `id`,`title` FROM `site_news` ORDER BY `pos_votes`-`neg_v...")
-
-file:74-D:\OpenServer\domains\localhost\core\init.php
-call:getNews("top")
-
-file:4-D:\OpenServer\domains\localhost\index.php
-call:include_once("D:\OpenServer\domains\localhost\core\init.php")
-
-
-
-
-#################################################################
-: Tue Feb 12 17:40:30 MSK 2013
-SQLSTATE[22003]: Numeric value out of range: 1690 BIGINT UNSIGNED value is out of range in '(`beautifuldb`.`site_news`.`pos_votes` - `beautifuldb`.`site_news`.`neg_votes`)'   SELECT `id`,`title` FROM `site_news` ORDER BY `pos_votes`-`neg_votes` DESC LIMIT 0,6
-Stack:
-file:26-D:\OpenServer\domains\localhost\core\classes\ERR.class.php
-call:backtrace()
-
-file:161-D:\OpenServer\domains\localhost\core\classes\DB.class.php
-call:err_log("SQLSTATE[22003]: Numeric value out of range: 1690 BIGINT UNSIGNE...", True, False, True)
-
-file:145-D:\OpenServer\domains\localhost\core\classes\DB.class.php
-call:err(Object(PDOException), "SELECT `id`,`title` FROM `site_news` ORDER BY `pos_votes`-`neg_v...")
-
-file:75-D:\OpenServer\domains\localhost\core\classes\DB.class.php
-call:query("SELECT `id`,`title` FROM `site_news` ORDER BY `pos_votes`-`neg_v...", False)
-
-file:31-D:\OpenServer\domains\localhost\core\classes\News.class.php
-call:getResult("SELECT `id`,`title` FROM `site_news` ORDER BY `pos_votes`-`neg_v...")
-
-file:75-D:\OpenServer\domains\localhost\core\init.php
-call:getNews("top")
-
-file:4-D:\OpenServer\domains\localhost\index.php
-call:include_once("D:\OpenServer\domains\localhost\core\init.php")
-
-
-
-
-#################################################################
-: Tue Feb 12 17:40:45 MSK 2013
-SQLSTATE[22003]: Numeric value out of range: 1690 BIGINT UNSIGNED value is out of range in '(`beautifuldb`.`site_news`.`pos_votes` - `beautifuldb`.`site_news`.`neg_votes`)'   SELECT `id`,`title` FROM `site_news` ORDER BY `pos_votes`-`neg_votes` DESC LIMIT 0,6
-Stack:
-file:26-D:\OpenServer\domains\localhost\core\classes\ERR.class.php
-call:backtrace()
-
-file:161-D:\OpenServer\domains\localhost\core\classes\DB.class.php
-call:err_log("SQLSTATE[22003]: Numeric value out of range: 1690 BIGINT UNSIGNE...", True, False, True)
-
-file:145-D:\OpenServer\domains\localhost\core\classes\DB.class.php
-call:err(Object(PDOException), "SELECT `id`,`title` FROM `site_news` ORDER BY `pos_votes`-`neg_v...")
-
-file:75-D:\OpenServer\domains\localhost\core\classes\DB.class.php
-call:query("SELECT `id`,`title` FROM `site_news` ORDER BY `pos_votes`-`neg_v...", False)
-
-file:31-D:\OpenServer\domains\localhost\core\classes\News.class.php
-call:getResult("SELECT `id`,`title` FROM `site_news` ORDER BY `pos_votes`-`neg_v...")
-
-file:75-D:\OpenServer\domains\localhost\core\init.php
-call:getNews("top")
-
-file:4-D:\OpenServer\domains\localhost\index.php
-call:include_once("D:\OpenServer\domains\localhost\core\init.php")
-
-
-
-
-#################################################################
-: Tue Feb 12 17:40:46 MSK 2013
-SQLSTATE[22003]: Numeric value out of range: 1690 BIGINT UNSIGNED value is out of range in '(`beautifuldb`.`site_news`.`pos_votes` - `beautifuldb`.`site_news`.`neg_votes`)'   SELECT `id`,`title` FROM `site_news` ORDER BY `pos_votes`-`neg_votes` DESC LIMIT 0,6
-Stack:
-file:26-D:\OpenServer\domains\localhost\core\classes\ERR.class.php
-call:backtrace()
-
-file:161-D:\OpenServer\domains\localhost\core\classes\DB.class.php
-call:err_log("SQLSTATE[22003]: Numeric value out of range: 1690 BIGINT UNSIGNE...", True, False, True)
-
-file:145-D:\OpenServer\domains\localhost\core\classes\DB.class.php
-call:err(Object(PDOException), "SELECT `id`,`title` FROM `site_news` ORDER BY `pos_votes`-`neg_v...")
-
-file:75-D:\OpenServer\domains\localhost\core\classes\DB.class.php
-call:query("SELECT `id`,`title` FROM `site_news` ORDER BY `pos_votes`-`neg_v...", False)
-
-file:31-D:\OpenServer\domains\localhost\core\classes\News.class.php
-call:getResult("SELECT `id`,`title` FROM `site_news` ORDER BY `pos_votes`-`neg_v...")
-
-file:75-D:\OpenServer\domains\localhost\core\init.php
-call:getNews("top")
-
-file:4-D:\OpenServer\domains\localhost\index.php
-call:include_once("D:\OpenServer\domains\localhost\core\init.php")
-
-
-
-
-#################################################################
-: Tue Feb 12 17:42:12 MSK 2013
-SQLSTATE[22003]: Numeric value out of range: 1690 BIGINT UNSIGNED value is out of range in '(`beautifuldb`.`site_news`.`pos_votes` - `beautifuldb`.`site_news`.`neg_votes`)'   SELECT `id`,`title` FROM `site_news` ORDER BY `pos_votes`-`neg_votes` DESC LIMIT 0,6
-Stack:
-file:26-D:\OpenServer\domains\localhost\core\classes\ERR.class.php
-call:backtrace()
-
-file:161-D:\OpenServer\domains\localhost\core\classes\DB.class.php
-call:err_log("SQLSTATE[22003]: Numeric value out of range: 1690 BIGINT UNSIGNE...", True, False, True)
-
-file:145-D:\OpenServer\domains\localhost\core\classes\DB.class.php
-call:err(Object(PDOException), "SELECT `id`,`title` FROM `site_news` ORDER BY `pos_votes`-`neg_v...")
-
-file:75-D:\OpenServer\domains\localhost\core\classes\DB.class.php
-call:query("SELECT `id`,`title` FROM `site_news` ORDER BY `pos_votes`-`neg_v...", False)
-
-file:31-D:\OpenServer\domains\localhost\core\classes\News.class.php
-call:getResult("SELECT `id`,`title` FROM `site_news` ORDER BY `pos_votes`-`neg_v...")
-
-file:75-D:\OpenServer\domains\localhost\core\init.php
-call:getNews("top")
-
-file:4-D:\OpenServer\domains\localhost\index.php
-call:include_once("D:\OpenServer\domains\localhost\core\init.php")
-
-
-
-
-#################################################################
-: Tue Feb 12 17:43:22 MSK 2013
-SQLSTATE[22003]: Numeric value out of range: 1690 BIGINT UNSIGNED value is out of range in '(`beautifuldb`.`site_news`.`pos_votes` - `beautifuldb`.`site_news`.`neg_votes`)'   SELECT `id`,`title` FROM `site_news` ORDER BY `pos_votes`-`neg_votes` DESC LIMIT 0,6
-Stack:
-file:26-D:\OpenServer\domains\localhost\core\classes\ERR.class.php
-call:backtrace()
-
-file:161-D:\OpenServer\domains\localhost\core\classes\DB.class.php
-call:err_log("SQLSTATE[22003]: Numeric value out of range: 1690 BIGINT UNSIGNE...", True, False, True)
-
-file:145-D:\OpenServer\domains\localhost\core\classes\DB.class.php
-call:err(Object(PDOException), "SELECT `id`,`title` FROM `site_news` ORDER BY `pos_votes`-`neg_v...")
-
-file:75-D:\OpenServer\domains\localhost\core\classes\DB.class.php
-call:query("SELECT `id`,`title` FROM `site_news` ORDER BY `pos_votes`-`neg_v...", False)
-
-file:31-D:\OpenServer\domains\localhost\core\classes\News.class.php
-call:getResult("SELECT `id`,`title` FROM `site_news` ORDER BY `pos_votes`-`neg_v...")
-
-file:75-D:\OpenServer\domains\localhost\core\init.php
-call:getNews("top")
-
-file:4-D:\OpenServer\domains\localhost\index.php
-call:include_once("D:\OpenServer\domains\localhost\core\init.php")
-
-
-
-
